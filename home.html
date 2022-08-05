@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220803170852">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220805150313">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="200" data-scroll-show class="header">
 			<div class="header__container header__container_wide">
 				<div class="header__column header__column_logo">
 					<a href="" class="header__logo">Gerícht</a>
@@ -102,7 +102,24 @@
 						<a href="" class="menu-main-slider__link menu-main-slider__link_current">#Gericht</a>
 						<a href="" class="menu-main-slider__link">#Bar</a>
 					</nav>
-					<button data-da=".body-main-slider, 1445, last" class="main-slider__scrool scrool">Scrool</button>
+					<button data-goto=".about-section" data-da=".body-main-slider, 1445, last" class="main-slider__scrool scrool">Scrool</button>
+				</div>
+			</section>
+			<section class="mainpage__about about-section">
+				<div class="about-section__container">
+					<div class="about-section__content">
+						<h3 class="about-section__title">About Us</h3>
+						<div class="about-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</div>
+						<a href="" class="about-section__button button">Know More</a>
+					</div>
+					<div class="about-section__knife">
+						<picture><source srcset="img/mainpage/about/knife.webp" type="image/webp"><img src="img/mainpage/about/knife.png" alt="knife"></picture>
+					</div>
+					<div class="about-section__content">
+						<h3 class="about-section__title">Our History</h3>
+						<div class="about-section__text">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</div>
+						<a href="" class="about-section__button button">Know More</a>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -123,7 +140,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220803170852"></script>
+	<script src="js/app.min.js?_v=20220805150313"></script>
 </body>
 
 </html>
