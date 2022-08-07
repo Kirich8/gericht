@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220805150313">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220807214218">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,7 +105,7 @@
 					<button data-goto=".about-section" data-da=".body-main-slider, 1445, last" class="main-slider__scrool scrool">Scrool</button>
 				</div>
 			</section>
-			<section class="mainpage__about about-section">
+			<section class="mainpage__about about-section main-bg">
 				<div class="about-section__container">
 					<div class="about-section__content">
 						<h3 class="about-section__title">About Us</h3>
@@ -119,6 +119,47 @@
 						<h3 class="about-section__title">Our History</h3>
 						<div class="about-section__text">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</div>
 						<a href="" class="about-section__button button">Know More</a>
+					</div>
+				</div>
+			</section>
+			<section class="book">
+				<div class="book__container">
+					<div class="book__body">
+						<div class="book__header block-header">
+							<div class="block-header__sub-title">Reservation</div>
+							<h2 class="block-header__title">Book A Table</h2>
+						</div>
+						<form action="#" class="book__form form-book">
+							<div class="form-book__lines">
+								<div class="form-book__line">
+									<select name="form[]" class="form">
+										<option value="1" selected>1 Person</option>
+										<option value="2">2 Person</option>
+										<option value="3">3 Person</option>
+										<option value="4">4 Person</option>
+									</select>
+								</div>
+								<div class="form-book__line">
+									<div class="form-book__input _icon-select-arrow">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required data-calendar placeholder="12/05/2021" class="input-dark">
+									</div>
+								</div>
+								<div class="form-book__line">
+									<select data-scroll="168" name="form[]" class="form">
+										<option value="1" selected>10:00 AM</option>
+										<option value="2">11:00 AM</option>
+										<option value="3">12:00 AM</option>
+										<option value="4">1:00 PM</option>
+										<option value="5">2:00 PM</option>
+										<option value="6">3:00 PM</option>
+										<option value="7">4:00 PM</option>
+										<option value="8">5:00 PM</option>
+										<option value="9">6:00 PM</option>
+									</select>
+								</div>
+							</div>
+							<button type="submit" class="book__button button">Book Now</button>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -140,7 +181,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220805150313"></script>
+	<script src="js/app.min.js?_v=20220807214218"></script>
 </body>
 
 </html>
