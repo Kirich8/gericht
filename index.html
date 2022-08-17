@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220815192146">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220817151703">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -137,7 +137,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="book">
+			<section class="book main-bg">
 				<div data-decor class="book__container">
 					<div class="book__body">
 						<div class="book__header block-header">
@@ -156,7 +156,7 @@
 								</div>
 								<div class="form-book__line">
 									<div class="form-book__input _icon-select-arrow">
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required data-calendar placeholder="12/05/2021" class="input-dark">
+										<input autocomplete="off" type="text" name="form[]" data-required data-calendar placeholder="12/05/2021" class="input-dark">
 									</div>
 								</div>
 								<div class="form-book__line">
@@ -371,6 +371,57 @@
 			<div data-watch="video" class="video-module">
 				<video id="video-module" poster="img/mainpage/video/video.jpg" data-full="files/restaurant_preview.mp4" class="video-module__item"></video>
 			</div>
+			<section class="awards main-bg">
+				<div class="awards__container">
+					<div class="awards__content">
+						<div class="awards__header block-header block-header_left">
+							<div class="block-header__sub-title">Awards & recognition</div>
+							<h2 class="block-header__title">Our Laurels</h2>
+						</div>
+						<div class="awards__items">
+							<div class="awards__item item-awards">
+								<div class="item-awards__image">
+									<picture><source srcset="img/mainpage/awards/2.webp" type="image/webp"><img src="img/mainpage/awards/2.png" alt="prize"></picture>
+								</div>
+								<div class="item-awards__description">
+									<div class="item-awards__title">Bib Gourmond</div>
+									<div class="item-awards__text">Lorem ipsum dolor sit amet, consectetur.</div>
+								</div>
+							</div>
+							<div class="awards__item item-awards">
+								<div class="item-awards__image">
+									<picture><source srcset="img/mainpage/awards/1.webp" type="image/webp"><img src="img/mainpage/awards/1.png" alt="prize"></picture>
+								</div>
+								<div class="item-awards__description">
+									<div class="item-awards__title">Rising Star</div>
+									<div class="item-awards__text">Lorem ipsum dolor sit amet, consectetur.</div>
+								</div>
+							</div>
+							<div class="awards__item item-awards">
+								<div class="item-awards__image">
+									<picture><source srcset="img/mainpage/awards/5.webp" type="image/webp"><img src="img/mainpage/awards/5.png" alt="prize"></picture>
+								</div>
+								<div class="item-awards__description">
+									<div class="item-awards__title">AA Hospitality </div>
+									<div class="item-awards__text">Lorem ipsum dolor sit amet, consectetur.</div>
+								</div>
+							</div>
+							<div class="awards__item item-awards">
+								<div class="item-awards__image">
+									<picture><source srcset="img/mainpage/awards/3.webp" type="image/webp"><img src="img/mainpage/awards/3.png" alt="prize"></picture>
+								</div>
+								<div class="item-awards__description">
+									<div class="item-awards__title">Outstanding Chef</div>
+									<div class="item-awards__text">Lorem ipsum dolor sit amet, consectetur.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="awards__image">
+						<picture><source srcset="img/mainpage/awards/image.webp" type="image/webp"><img src="img/mainpage/awards/image.png" alt=""></picture>
+					</div>
+				</div>
+			</section>
 			<section class="gallery main-bg">
 				<div class="gallery__container">
 					<div class="gallery__content">
@@ -405,6 +456,25 @@
 								<picture><source data-srcset="img/mainpage/menu/bg.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/mainpage/menu/bg.jpg" alt="Food"></picture>
 							</a>
 						</div>
+					</div>
+				</div>
+			</section>
+			<section class="newsletter main-bg">
+				<div data-decor class="newsletter__container">
+					<div class="newsletter__body">
+						<div class="newsletter__header block-header">
+							<div class="block-header__sub-title">Newsletter</div>
+							<h2 class="block-header__title">Subscribe to Our Newsletter</h2>
+						</div>
+						<div class="newsletter__text">And never miss latest Updates!</div>
+						<form data-dev data-popup-message="#formEmail" action="#" class="newsletter__form">
+							<div class="newsletter__line">
+								<div class="newsletter__input">
+									<input autocomplete="off" type="email" name="form[]" data-required placeholder="Email Address" class="input-email">
+								</div>
+							</div>
+							<button type="submit" class="newsletter__button button">Subscribe</button>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -452,15 +522,25 @@
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<div class="popup__text">
-					Successful booking
+					Successful Booking
 				</div>
 				<button data-close type="button" class="popup__close button">Close</button>
 			</div>
 		</div>
 	</div>
 
+	<div id="formEmail" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					Successful Subscribe
+				</div>
+				<button data-close type="button" class="popup__close button">Close</button>
+			</div>
+		</div>
+	</div>
 
-	<script src="js/app.min.js?_v=20220815192146"></script>
+	<script src="js/app.min.js?_v=20220817151703"></script>
 </body>
 
 </html>
